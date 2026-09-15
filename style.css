@@ -1,0 +1,230 @@
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'League Spartan', sans-serif;
+   padding-top: 10px;
+   background-image: url("images/bg-pattern-top-desktop.svg");
+   background-repeat: no-repeat;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap:400px;
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding-left:  20px;
+
+}
+.note{
+    color: hsl(300, 43%, 22%);
+    font-size: 40px;    
+    font-weight: 800;
+    font-family: 'League Spartan', sans-serif;
+    text-align: left;
+    width: 90%;
+}
+.reviews{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    text-align: center;
+
+}
+.special{
+   color: hsl(300, 43%, 22%); 
+   text-align: left;
+   padding-left: 15px;
+   font-family: 'League Spartan', sans-serif;
+}
+  .l1, .l2, .l3  {  
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+    height: 30px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: small;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    gap: 20px;
+}
+.bottom{
+    padding-top:30px;
+    display: flex;
+    gap: 5px;
+}
+.name1, .name2, .name3{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 6px;
+    padding: 30px;
+    color: white;
+
+}
+.sc{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.tm{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+span{
+    color:hsl(333, 80%, 67%); 
+}
+p{
+   text-align: left;
+   padding-left: 15px;
+   font-family: 'League Spartan', sans-serif; 
+}
+.reviews{
+    gap: 10px;
+}
+.l1 {
+    transform: translateX(0);
+}
+
+.l2 {
+    transform: translateX(40px);
+}
+
+.l3 {
+    transform: translateX(80px);
+}
+
+.name1{
+    transform: translateY(0);
+}
+.name2{
+    transform: translateY(10px);
+}
+.name3{
+    transform: translateY(20px);
+}
+.all{
+    width: 1200px;
+    display:flex;
+    flex-direction: column;
+    padding-top: 50px;
+    
+}
+
+
+@media (max-width: 768px) {
+
+    body {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-image: url("images/bg-pattern-top-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top;
+    }
+
+    .all {
+        width: 100%;
+        padding-top: 20px;
+        box-sizing: border-box;
+    }
+
+    .top {
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 20px;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .note {
+        width: 100%;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .special {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .reviews {
+        width: 100%;
+        gap: 15px;
+    }
+
+    .l1,
+    .l2,
+    .l3 {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+
+        transform: translateX(0);
+
+        flex-direction: column;
+        justify-content: center;
+
+        padding: 15px;
+        gap: 8px;
+    }
+
+    .bottom {
+        flex-direction: column;
+        gap: 15px;
+        padding: 30px 20px 0 20px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .name1,
+    .name2,
+    .name3 {
+        width: 100%;
+        box-sizing: border-box;
+
+        transform: translateY(0);
+
+        padding: 25px;
+    }
+
+    .name2,
+    .name3 {
+        transform: translateY(0);
+    }
+
+}
